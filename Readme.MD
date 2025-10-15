@@ -30,4 +30,8 @@ Problems:
 -How the loop inside loop works;
 ----------------------------------------------------------------
 #7. Star pattern;
--
+-so, in these star patterns what we have covered means;
+-1. the "i" loop is for rows and "j" loop is for columns ( example );
+-2. the (j<=i) or (j< i + 1) is both are same;
+-3. if left side any empty spaces we need extra loop ( total 3 loops -as per our concern );
+-4. resolve the differents patterns - practice and practice.
