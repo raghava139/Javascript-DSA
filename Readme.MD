@@ -35,3 +35,12 @@ Problems:
 -2. the (j<=i) or (j< i + 1) is both are same;
 -3. if left side any empty spaces we need extra loop ( total 3 loops -as per our concern );
 -4. resolve the differents patterns - practice and practice.
+-5. pyramid pattern (2*i-1) and inverted pyramid pattern (2 * (n-i)-1);
+------------------------------------------------------------------
+#8. Count Digit
+-1. How to know the how digits are there and its corner cases using While Loop;
+----------------------------------------------------------------------
+#9. Palindrome;
+#10. Reverse Integer;
+-both are same following but some small differences are there (on Main Logic); //Using While Loop;
+-----------------------------------------------------------------------

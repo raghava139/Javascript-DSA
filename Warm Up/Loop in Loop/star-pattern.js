@@ -85,37 +85,62 @@ function StarPattern() {
     // }
 
     // problem 7
-    let n = 5
+    // let n = 5
    
-    for (let i = 0; i < n; i++) {
-        let row = "";
-         let Switch = 1;
-        for (let j = 0; j <= i; j++) {
-            row = row + Switch;
-            if (Switch == 1) {
-                Switch = 0;
-            } else {
-                Switch = 1
-            }
-        }
-        console.log(row)
-    }
+    // for (let i = 0; i < n; i++) {
+    //     let row = "";
+    //      let Switch = 1;
+    //     for (let j = 0; j <= i; j++) {
+    //         row = row + Switch;
+    //         if (Switch == 1) {
+    //             Switch = 0;
+    //         } else {
+    //             Switch = 1
+    //         }
+    //     }
+    //     console.log(row)
+    // }
 
     // problem 8
     // Same as problem 7 but this the variable of Switch is moved to top. Because it will switch inside  1010, 
     // but for problem 7 has every starting inner loop the switch starts with '1';
-    let Switch = 1;
-     for (let i = 0; i < n; i++) {
-        let row = "";
-        for (let j = 0; j <= i; j++) {
-            row = row + Switch;
-            if (Switch == 1) {
-                Switch = 0;
-            } else {
-                Switch = 1
-            }
+    // let Switch = 1;
+    //  for (let i = 0; i < n; i++) {
+    //     let row = "";
+    //     for (let j = 0; j <= i; j++) {
+    //         row = row + Switch;
+    //         if (Switch == 1) {
+    //             Switch = 0;
+    //         } else {
+    //             Switch = 1
+    //         }
+    //     }
+    //     console.log(row)
+    // }
+
+    //problem 9
+    //Print the Pyramid Shape
+    let n =5
+    // for (let i = 1 ; i < n ; i++){
+    //     let pattern = "";
+    //     for(let j = 1 ; j <= n-i; j++){
+    //         pattern += " _ ";
+    //     }
+    //     for(let k = 1; k <= 2 * i -1 ; k++ ){
+    //         pattern += " * ";
+    //     }
+    //     console.log(pattern)
+    // }
+
+      for (let i = 0 ; i < n ; i++){
+        let pattern = "";
+        for (let j=0 ; j<i; j++ ){
+            pattern += "  "
         }
-        console.log(row)
+        for(let k = 0; k < 2*(n-i) -1; k++ ){
+            pattern += " * ";
+        }
+        console.log(pattern)
     }
 }
 StarPattern();

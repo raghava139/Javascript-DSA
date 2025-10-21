@@ -70,11 +70,11 @@ function LoopInLoop() {
     // }
 
     // Weird start and end values
-    for(let i=-1; i<2; i++){
-        for (let j=2; j>-1; j--){
-            console.log(`i=${i}, j=${j}`)
-        }
-    }
+    // for(let i=-1; i<2; i++){
+    //     for (let j=2; j>-1; j--){
+    //         console.log(`i=${i}, j=${j}`)
+    //     }
+    // }
 }
 
 LoopInLoop();
