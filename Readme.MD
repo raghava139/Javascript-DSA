@@ -129,3 +129,14 @@ n= 1milion ; x = 3milion times
 ->ex: suppose we have O(n^2 + 2n) => O(n^2) -greater
 ->ex: suppose we have O(n^2 + nlog + 2n + 5) => O(n^2) -greater
 It will always be greater Value.//
+
+#10. Arrays-Easy/Medium
+#Remove Duplicates (Two-pointers);
+#Remove Elements (Two-pointers);
+#Reverse The String in Array
+#Best Time to Buy and sell the stock(find the maxProfit)
+#Merged Sorted Array => 3Approaches we did (solutions);
+#Move Zeros -> 2Approaches(solutions);
+#Consecutiveone's -> 2Approaches (solutions);
+#Missing Number -> 2 Approaches
+#single Number -> 2 Approaches
