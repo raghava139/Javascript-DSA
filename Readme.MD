@@ -66,7 +66,7 @@ Problems:
  -It means symbolic representation
 
 -Best Case, Average Case , Worst Case ;
-1.Best Case:
+1.Best Case: 
    -The element you’re looking for (x) is the first element in the array.
    -Only 1 comparison is needed.
    -✅ Time Complexity: O(1)
@@ -80,6 +80,12 @@ Problems:
   -The element is not in the array, or it’s the last element.
   -You have to check every single element.
   -✅ Time Complexity: O(n)
+
+CASE      → Best | Average | Worst
+NOTATION    → Θ   |  Ω      | O 
+BOUND     → Lower | tight   | upper
+RULE       → Case tells WHEN, Bound tells LIMIT ,Θ tells GROWTH
+
 
 -----Types of complexities--------
 -O(1) -> constant time

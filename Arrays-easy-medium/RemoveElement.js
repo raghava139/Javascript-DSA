@@ -20,6 +20,10 @@ function RemoveElement(nums,value){
     console.log(x)
     return x;
 }
-let nums = [1,2,4,1,8,1,2],value = 1
+let nums = [0,1,2,2,3,0,4,2],value = 2
 // let nums = [3,2,1,5,3,4,8,3],value = 3
 RemoveElement(nums,value);
+
+// Complexities:
+// TC: O(n)
+// SC: O(1)

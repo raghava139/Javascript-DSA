@@ -8,7 +8,6 @@
 // The first k elements of nums should contain the unique numbers in sorted order.
 // The remaining elements beyond index k - 1 can be ignored.
 
-
 function removeDuplicates(nums){
 
     let x = 0;
@@ -26,3 +25,7 @@ function removeDuplicates(nums){
 
 let nums = [0,0,1,1,1,2,2,3,3,4];
 removeDuplicates(nums);
+
+// Complexities:
+// TC: O(n)
+// SC: O(1)
