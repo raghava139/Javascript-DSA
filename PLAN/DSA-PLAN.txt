@@ -1,0 +1,84 @@
+PLAN FOR DSA LEANRING
+✅ ✅ WHAT YOU SHOULD DO
+📌 Module Completion Rule
+✅ Solve all problems given in Namaste DSA module yourself
+✅ Write code without watching solution first
+✅ Understand pattern behind each problem
+✅ Be able to explain approach in your own words
+✅ Do dry run for recursion problems
+
+📌 Current Study Structure (Daily)
+✅ Main focus → New module learning (Recursion next)
+✅ Solve 1–2 new problems daily from current module
+✅ Do 1 old array problem daily for revision
+✅ Spend more time on thinking, not copying
+✅ Keep a weak-problem list
+
+📌 Revision Method
+✅ Revise by pattern, not by random
+✅ Rotate patterns (two pointer / greedy / xor / merge / slow-fast)
+✅ Re-solve only medium + weak problems
+✅ Try solving without hints first
+✅ Weekend → revisit weak problems
+
+📌 When To Move Next Module
+Move forward when:
+✅ You solved module problems yourself
+✅ You understand patterns
+✅ You can code without video help
+✅ Basic confidence is there
+
+📌 When To Start LeetCode New Problems
+Start after completing:
+✅ Arrays
+✅ Recursion
+✅ Strings
+✅ Searching & Sorting
+
+Then:
+✅ Start with 1 LC problem per day (pattern-based)
+
+📌 Problem Solving Method (Every Question)
+✅ Read problem twice
+✅ Identify pattern
+✅ Write approach in comments
+✅ Code
+✅ Dry run
+✅ Then optimize
+
+
+❌ ❌ WHAT YOU SHOULD NOT DO
+🚫 Module Mistakes
+❌ Don’t just watch videos and mark module complete
+❌ Don’t skip solving course problems
+❌ Don’t jump modules without coding practice
+❌ Don’t rewatch full modules again and again
+🚫 Practice Mistakes
+❌ Don’t solve 10 problems daily randomly
+❌ Don’t chase number of problems
+❌ Don’t collect problems without solving
+❌ Don’t copy solution and feel “done”
+
+🚫 Array Module Mistakes (Right Now)
+❌ Don’t start new random array problems yet
+❌ Don’t grind more array variations now
+❌ Don’t go to LeetCode arrays now
+❌ Don’t restart array module from zero
+
+🚫 Learning Flow Mistakes
+❌ Don’t study multiple new modules same day
+❌ Don’t stop revision completely
+❌ Don’t compare with others’ speed
+❌ Don’t wait for “perfect understanding” to move
+
+✅ Golden Formula (Save This)
+Learn new module daily
+Solve module problems yourself
+Revise old module lightly
+Move forward steadily
+Add LeetCode later
+
+✅ Your Current Exact Next Step
+Finish solving Namaste DSA Array problems yourself
+→ Then start Recursion module
+→ Daily recursion + 1 array revision

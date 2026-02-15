@@ -57,5 +57,5 @@ function MergedSortedArr(nums1,m,nums2,n){
     console.log(nums1)
 }
 
-let nums1=[1,2,3,0,0,0], nums2 = [2,5,6], n = 3 , m = 3
+let nums2=[1,2,3,0,0,0], nums1 = [2,5,6], n = 3 , m = 3
 MergedSortedArr(nums1,m,nums2,n);

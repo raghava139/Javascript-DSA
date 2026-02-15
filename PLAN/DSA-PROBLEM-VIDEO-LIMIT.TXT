@@ -1,0 +1,85 @@
+This is your DSA Problem Time-Limit & Pause Rules Checklist — follow this exactly whenever you solve any problem.
+
+📘 DSA Problem Solving — Time Limit & Pause Rules
+⏱️ TIME LIMIT RULES
+✅ Try Time Per Problem
+
+Easy problem → try 20–25 minutes
+Medium problem → try 35–45 minutes
+New topic problem (Recursion/Stack/etc.) → try 45–60 minutes
+
+Time limit applies to:
+Course problems
+Practice problems
+Later LeetCode problems
+
+▶️ WHEN TIMER SHOULD RUN (COUNT TIME)
+Keep timer running when you are actively:
+Writing approach in comments
+Trying brute force logic
+Dry running examples
+Writing code
+Debugging logic
+Testing edge cases
+Rewriting approach
+This is valid struggle time ✅
+
+⏸️ WHEN TO PAUSE TIMER (DO PAUSE)
+Pause timer when you:
+Take a short break (water/walk)
+Get interrupted (call/work/home)
+Rewatch concept part of video
+Review notes for pattern refresh
+Draw recursion tree / diagram separately
+Reset mind after confusion (5 min reset)
+These are support actions — not solving time ✅
+
+❌ WHEN TIMER SHOULD NOT RUN (DON’T COUNT)
+Do NOT count time when you are:
+Just staring blankly
+Scrolling internet randomly
+Watching full unrelated videos
+Distracted by phone
+Reading comments/discussion threads
+Waiting for idea without trying
+This is fake try time ❌
+Pause → reset → restart.
+
+🚨 WHEN TIME LIMIT EXPIRES — WHAT TO DO
+When your try time ends:
+See solution explanation calmly
+Focus on pattern + key idea
+Close solution
+Code again from scratch yourself
+
+Add note:
+Pattern used
+Why I got stuck
+Trick I missed
+Learning happens here ✅
+
+⚠️ DO NOT DO AFTER TIME LIMIT
+Don’t copy paste solution
+Don’t mark problem as done
+Don’t move without re-coding
+Don’t say “I understood” without typing code
+
+💡 HINT RULE (FOR COURSE PROBLEMS)
+If stuck:
+Try full time first
+Then see small hint
+Try again
+Then see full solution if still stuck
+
+Not direct full solution ❌
+🧠 RESET RULE (VERY IMPORTANT)
+
+If stuck with zero progress for 15 minutes:
+Pause timer → do this:
+Try brute force approach
+Solve for small input manually
+Write step-by-step logic
+Then restart timer
+
+✅ GOLDEN LINE TO SAVE
+Struggle with problems — but struggle with a timer and a method.

@@ -1,0 +1,11 @@
+🚀 WHEN TO START LEETCODE
+Start LeetCode new problems only after finishing:
+Arrays
+Recursion
+Strings
+Searching & Sorting
+etc...,
+
+Then:
+Start with 1 LC problem per day
+Pattern-based selection

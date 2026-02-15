@@ -144,5 +144,18 @@ console.log(2 ** 3); // 8
 - Computers use binary because circuits understand only **0 (off)** and **1 (on)**
 
 ---
+why 
+00 = 0,
+01 = 1,
+10 = 1,
+11 = 0, 
+Example: (solution)
+switch A   switch B   light
+OFF        OFF        OFF (0)
+ON         ON         OFF (0)
+OFF        ON         ON  (1)
+ON         OFF        ON  (1)
+
 
 🧠 for deep understanding, not memorization!*
+
