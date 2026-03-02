@@ -1,0 +1,118 @@
+TIME COMPLEXITY NOTES (With Clear Examples)
+
+1) Big-O Definition
+
+Time Complexity = Total number of times a statement executes.
+
+It does NOT depend on how many loops you see. It depends on how many
+times the code actually runs.
+
+------------------------------------------------------------------------
+
+2) Single Loop Examples
+
+Example A: O(N)
+
+for (let i = 0; i < n; i++) { console.log(i); }
+
+This runs n times. Time Complexity = O(N)
+
+Example B: O(N^2) with One Loop
+
+for (let i = 0; i < n*n; i++) { console.log(i); }
+
+This runs n^2 times. Time Complexity = O(N^2)
+
+One loop does NOT always mean O(N).
+
+------------------------------------------------------------------------
+
+3) Nested Loop Examples
+
+Example A: True O(N^2)
+
+for (let i = 0; i < n; i++) { for (let j = 0; j < n; j++) {
+console.log(i, j); } }
+
+Outer loop runs n times. Inner loop runs n times for each outer loop.
+Total = n × n = O(N^2)
+
+Example B: Nested but O(N)
+
+for (let i = 0; i < n; i++) { for (let j = i; j < i+1; j++) {
+console.log(j); } }
+
+Inner loop runs only once per outer loop. Total = n × 1 = O(N)
+
+Nested loops do NOT always mean O(N^2).
+
+------------------------------------------------------------------------
+
+4) Bubble Sort Case Study
+
+Worst Case (Reverse Sorted): Outer loop runs n times. Inner loop runs
+about n times. Total = n + (n-1) + (n-2) + … = n(n-1)/2 Time Complexity
+= O(N^2)
+
+Best Case (Already Sorted with break optimization): Outer loop runs
+once. Inner loop runs n times. Total = n Time Complexity = O(N)
+
+------------------------------------------------------------------------
+
+5) Logarithmic Example
+
+for (let i = 1; i < n; i *= 2) { console.log(i); }
+
+Sequence: 1, 2, 4, 8, 16… This runs log2(n) times. Time Complexity =
+O(log N)
+
+------------------------------------------------------------------------
+
+6) N log N Example
+
+for (let i = 1; i < n; i *= 2) { for (let j = 0; j < n; j++) {
+console.log(j); } }
+
+Outer loop runs log n times. Inner loop runs n times. Total = n log n
+Time Complexity = O(N log N)
+
+------------------------------------------------------------------------
+
+7) Two Pointer Pattern (Merge Example)
+
+while (p1 >= 0 && p2 >= 0) { if (arr1[p1] > arr2[p2]) { p1–; } else {
+p2–; } }
+
+Each pointer moves only once. Total moves = m + n Time Complexity =
+O(m + n)
+
+------------------------------------------------------------------------
+
+8) Golden Rules
+
+Rule 1: Count actual executions, not loops.
+
+Rule 2: Total work = Outer iterations × Inner iterations.
+
+Rule 3: Drop constants: O(2N) -> O(N) O(5N^2 + 3N) -> O(N^2)
+
+Rule 4: If loop breaks early, best case can be smaller.
+
+------------------------------------------------------------------------
+
+Final Mental Model
+
+Instead of asking: “How many loops are there?”
+
+Ask: “How many times does this line actually execute?”
+
+That answer is your Time Complexity.
+------------------------------------
+
+🎯 Quick Comparison Table
+| Outer | Inner | Complexity  |
+| ----- | ----- | ----------- |
+| n     | n     | O(n²)       |
+| n     | log n | O(n log n)  |
+| log n | n     | O(n log n)  |
+| log n | log n | O((log n)²) |

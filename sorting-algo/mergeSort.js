@@ -29,3 +29,8 @@ function merge(leftArr,rightArr){
 let arr = [8,4,5,6,9,1,3,6];
 // sortArray(arr)
 console.log(sortArray(arr))
+
+
+//TC && SC
+//TC: O(n log n);
+//Sc: O(n);
