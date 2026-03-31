@@ -1,0 +1,78 @@
+
+<!-- saved from url=(0068)file:///C:/Users/yalla/Downloads/weak_vs_regular_sticky_note_v2.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  .page { padding: 1rem 0; display: flex; justify-content: center; }
+  .sticky {
+    width: 384px;
+    background: #FFF9C4;
+    border: 1px solid #F0E040;
+    border-radius: 4px;
+    padding: 28px 28px 36px;
+    box-shadow: 3px 3px 0px #E8D800;
+    font-family: var(--font-sans);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .heading { font-size: 17px; font-weight: 500; color: #3a3800; border-bottom: 1.5px solid #E8D800; padding-bottom: 10px; }
+  .section-title { font-size: 10px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: #9a8f00; margin-bottom: 4px; }
+  .row { display: flex; justify-content: space-between; font-size: 12px; color: #3a3800; padding: 3px 0; border-bottom: 0.5px solid #F0E878; gap: 8px; }
+  .row:last-child { border-bottom: none; }
+  .row .k { color: #7a7000; flex-shrink: 0; }
+  code { font-family: var(--font-mono); font-size: 11px; background: rgba(0,0,0,0.07); padding: 1px 5px; border-radius: 3px; }
+  .yes { color: #3B6D11; font-weight: 500; }
+  .no  { color: #A32D2D; font-weight: 500; }
+  .block { background: rgba(255,255,255,0.45); border-radius: 4px; padding: 10px 12px; }
+  .new { font-size: 9px; background: #ffb700; color: #3a3800; padding: 1px 5px; border-radius: 3px; font-weight: 500; margin-left: 4px; vertical-align: middle; }
+</style>
+
+</head><body><div class="page">
+  <div class="sticky">
+    <div class="heading">Map/Set vs WeakMap/WeakSet</div>
+
+    <div class="block">
+      <div class="section-title">Key / Value type</div>
+      <div class="row"><span class="k">Map key</span> <span class="yes">any type</span></div>
+      <div class="row"><span class="k">WeakMap key</span> <span class="no">objects only</span></div>
+      <div class="row"><span class="k">WeakMap value</span> <span class="yes">anything ✅</span></div>
+      <div class="row"><span class="k">WeakSet value</span> <span class="no">objects only</span></div>
+    </div>
+
+    <div class="block">
+      <div class="section-title">Garbage Collection</div>
+      <div class="row"><span class="k">Map/Set</span> <span class="no">manual delete needed</span></div>
+      <div class="row"><span class="k">WeakMap/WeakSet</span> <span class="yes">auto cleaned by GC</span></div>
+    </div>
+
+    <div class="block">
+      <div class="section-title">Size &amp; Iteration <span class="new">updated</span></div>
+      <div class="row"><span class="k">.size</span> <span><span class="yes">Map/Set ✓</span> &nbsp; <span class="no">Weak ✗</span></span></div>
+      <div class="row"><span class="k">for..of / forEach</span> <span><span class="yes">Map/Set ✓</span> &nbsp; <span class="no">Weak ✗</span></span></div>
+      <div class="row"><span class="k">.keys() .values()</span> <span><span class="yes">Map/Set ✓</span> &nbsp; <span class="no">Weak ✗</span></span></div>
+      <div class="row"><span class="k">.clear()</span> <span><span class="yes">Map/Set ✓</span> &nbsp; <span class="no">Weak ✗</span></span></div>
+    </div>
+
+    <div class="block">
+      <div class="section-title">Methods <span class="new">updated</span></div>
+      <div class="row"><span class="k">Map</span> <code>set</code> <code>get</code> <code>has</code> <code>delete</code> <code>clear</code></div>
+      <div class="row"><span class="k">WeakMap</span> <code>set</code> <code>get</code> <code>has</code> <code>delete</code></div>
+      <div class="row"><span class="k">Set</span> <code>add</code> <code>has</code> <code>delete</code> <code>clear</code></div>
+      <div class="row"><span class="k">WeakSet</span> <code>add</code> <code>has</code> <code>delete</code></div>
+    </div>
+
+    <div class="block">
+      <div class="section-title">clear() does what? <span class="new">new</span></div>
+      <div class="row"><span class="k">delete(key)</span> <span>removes one item</span></div>
+      <div class="row"><span class="k">clear()</span> <span>removes everything at once</span></div>
+    </div>
+
+    <div class="block">
+      <div class="section-title">Use when</div>
+      <div class="row"><span class="k">Map/Set</span> <span>general storage, need to loop</span></div>
+      <div class="row"><span class="k">Weak</span> <span>data tied to object lifetime</span></div>
+    </div>
+
+  </div>
+</div>
+</body></html>
