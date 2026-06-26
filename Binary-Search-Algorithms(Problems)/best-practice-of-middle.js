@@ -1,0 +1,1 @@
+// let middle = left+ Math.floor((right-left)/2)

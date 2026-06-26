@@ -1,21 +1,26 @@
-let users ={
-    firstName :"Raghavendra",
-    lastName : "Yallamanda"
-}
+// function add(x,y){
+//   console.log(x * y)
+// }
 
-let printName = function (n,d,k){
-    console.log(this.firstName + " " + this.lastName +" " + n +" " + d +" " + k);
-}
+// add(10,2)
+// add(10,3)
+// add(10,4)
+// add(10,5)
+// add(10,6)
+// add(10,7)
 
-// let bindMethod = printName.bind(users,'testing.');
-// bindMethod('something')
+// function add(x){
+//   return function (y){
+//     console.log(x * y)
+//   }
+// }
 
-Function.prototype.myBind = function(thisArg,...boundArgs){
-    let test = this;
-    return function(...callArgs){
-         return test.apply(thisArg,[...boundArgs,...callArgs])
-    }
-}
+// let addReUse = add(10)(3)
+// // addReUse(2);
+// // addReUse(3);
+// // addReUse(4);
+// // addReUse(5);
+// // addReUse(6);
 
-let testingBind = printName.myBind(users,'great',['testing..','great'])
-testingBind([20,303]);
+// const add = a => b => c => console.log(a+b+c)
+// add(10)(20)(30)
