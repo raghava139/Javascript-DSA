@@ -1,25 +1,50 @@
-// 1.global space; -> nodejs/browser/watch etcc.,
-// 2. inside a function; depends on strict/non-strict mode; (this substiution)
-// 3 undefined or null replaced to  global object only in non-strict StrictMode;
-// 4. this keyword value depends on how the function is called;
-// x();
-// // window.x();
-// 5. this insdie a object's method;
-// 6. CALL, APPLY , BIND METHODS (SHARING METHODS);
-// 7. this inside arrow function; (enclosing lexical context);
-// 8. this inside nested arrow functions; or inside nested normal function (inside object)
-// 9. this inside Dom that refers particular HTML ELEMENT;
+const nums = [];
 
-const obj ={
-    a:10,
-    x:function (){
-        console.log(this.a)
+// function sum(nums) {
+//     let result = [];
+//     for (let i = 0; i < nums.length; i++) {
+//         result.push(nums[i] * 2)
+//     }
+//     return result;
+// }
+// let result = sum(nums);
+// console.log(result);
+
+
+// const reduceFn = nums.reduce(function (accumaltor, currentvalue, index, array) {
+//     // console.log('acc',accumaltor)
+//     accumaltor = accumaltor + currentvalue;
+//     return accumaltor;
+// }, 0)
+
+// console.log(reduceFn)
+
+
+Array.prototype.myReduce = function (callback, initialValue) {
+    let accumaltor;
+    let startIndex = 0;
+
+    if (this.length === 0 && arguments.length < 2) {
+        throw new TypeError('Reduce an empty array with no initial value ')
     }
+    if (arguments.length > 1) {
+        accumaltor = initialValue;
+    } else {
+        accumaltor = this[0];
+        startIndex = 1;
+    }
+    for (let i = startIndex; i < this.length; i++) {
+        accumaltor = callback(accumaltor, this[i], i, this)
+    }
+
+    return accumaltor;
 }
-obj.x();
 
 
-const obj2 = {
-    a:500,
-}
-obj.x.call(obj2)
+const reduceFn = nums.reduce(function (accumaltor, currentvalue, index, array) {
+    // console.log('acc',accumaltor)
+    accumaltor = accumaltor + currentvalue;
+    return accumaltor;
+}, 0)
+
+console.log(reduceFn)
